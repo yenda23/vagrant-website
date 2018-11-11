@@ -76,6 +76,9 @@ Vagrant.configure("2") do |config|
     vagrant_config['nodes'].each do |node|
       config.vm.define node["name"] do |srv|
         srv.vm.box                = node["box"]
+        if node["puppet_environment"]
+          environment = node["puppet_environment"]
+        end
         if node["box_version"]
           srv.vm.box_version      = node["box_version"]
         end
