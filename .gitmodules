@@ -82,3 +82,6 @@
 [submodule "production/modules/wget"]
 	path = production/modules/wget
 	url = https://github.com/voxpupuli/puppet-wget.git
+[submodule "production/modules/apt"]
+	path = production/modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
